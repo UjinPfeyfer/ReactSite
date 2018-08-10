@@ -1,0 +1,18 @@
+.Article{
+    margin: 40px;
+    padding: 5px;
+    border: darkgray;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+}
+.Liked{
+    background: red;
+    float:left;
+    margin-left: 15px;
+}
+.NoLiked{
+    float:left;
+    margin-left: 15px;
+}
+button:hover{background: revert}
