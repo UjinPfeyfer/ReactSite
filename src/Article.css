@@ -15,4 +15,8 @@
     float:left;
     margin-left: 15px;
 }
+.btnOpen{
+    margin: 10px;
+    align-items: right;
+}
 button:hover{background: revert}

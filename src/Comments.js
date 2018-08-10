@@ -11,14 +11,14 @@ export default class Comments extends Component{
 }
     render() {
         var comment
-        const {comments}=this.props;
+        const {comments} = this.props;
         console.log(this.props)
 
          if (comments !== undefined) {
-              comment = comments.map((comments) => <Comment comm={comments}/>)
+              comment = comments.map((comments) => <Comment comm = {comments}/>)
          }
          else {
-             comment=<Comment/>
+             comment = <Comment/>
              console.log("1")
          }
         return (<div className='Comment'>{comment}</div>)

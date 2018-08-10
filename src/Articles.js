@@ -22,5 +22,5 @@ export default class Articles extends PureComponent{
                     articleEl
             )
     }
-handleClick =openArtId=>this.setState({openArtId:this.state.openArtId===openArtId?null:openArtId})
+handleClick = openArtId => this.setState({openArtId:this.state.openArtId===openArtId?null:openArtId})
 }

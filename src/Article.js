@@ -37,13 +37,15 @@ render(){
             <div className="Article">
                 <div>
                     <h3 onClick={this.incrementCounter}>
-                        {article.title}
-                        clicked {this.state.count}
-                        <button onClick={onButtonClick}>{isOpen?'close':'open'}</button>
+                        {article.title}   clicked {this.state.count}
                     </h3>
+                    <button className='btnOpen' onClick={onButtonClick}>{isOpen?'close':'open'}</button>
                 </div>
                 {body}
-                <div className='ButPanel'><button className={this.state.isLike?'Liked':'NoLiked'} onClick={this.Liked}>Like</button><button className='ButComment' onClick={this.ShowHideComment}>Комментарии</button></div>
+                <div className='ButPanel'>
+                    <button className={this.state.isLike?'Liked':'NoLiked'} onClick={this.Liked}>Like</button>
+                    <button className='ButComment' onClick={this.ShowHideComment}>Комментарии</button>
+                </div>
                 {this.state.showComment?<Comments comments={article.comments}/>:null}
             </div>
        ) ;
